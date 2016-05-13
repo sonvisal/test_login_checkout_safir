@@ -5,7 +5,7 @@ Feature: Test register page
     So that [benefit]
 
     @dev
-    Scenario:  check register field
+    Scenario:  check register
         When I navigate to "/login"
         Then I should see the button ".btn-register"
         Then I should see the field "#username"

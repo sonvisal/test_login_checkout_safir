@@ -11,6 +11,5 @@ Feature: Test logout  page
         When I try to connect with username "mama@gmail.com" and password "root"
         Then I should see class ".dropdown-toggle"
         Then I click on the button  ".dropdown-toggle"
-        Then I should see class  "#logout"
         Then I click on the button "#logout"
         Then I navigate to "/login"
