@@ -1,4 +1,7 @@
 #!/bin/bash
-filename=$(date +'%Y-%m-%d')-error.log
+filename=$(date +'%Y-%m-%d-%T')-error.log
 echo $filename
-chimp --ddp=http://localhost:3000 --watch | grep -e "still not existing after 50000ms|Error: An element could not be located" -A 5 -B 5 > $filename
+export  ROOT_URL=http://localhost:3000
+
+chimp --ddp=http://localhost:3000/ --watch | grep -e "still not existing after 50000ms|Error: An element could not be located" > $filename
+#chimp --watch --ddp=$ROOT_URL --path=test_login_checkout_safir
