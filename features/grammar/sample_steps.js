@@ -14,8 +14,8 @@ module.exports = function () {
     });
 
     this.Given(/^I am not connected$/, function () {
-        browser.url(process.env.ROOT_URL+"logout");
-        browser.url(process.env.ROOT_URL+"login");
+        browser.url(process.env.ROOT_URL+"/logout");
+        browser.url(process.env.ROOT_URL+"/login");
     });
 
     // Actions
@@ -51,27 +51,12 @@ module.exports = function () {
         client.waitForExist('a[href$="'+btn+'"]');
     });
 
-    // this.Then(/^Then I should see number images  "([^"]*)"$/, function (btn) {
-    //  assert_equal( $('img').length , btn ) ;
-    // });
-
-    // this.Then(/^I try to connect with username "([^"]*)" and password "([^"]*)"$/, function (user, pass) {
-    //     browser.setValue('input[name=email]', user);
-    //     browser.setValue('input[name=password]', pass);
-    //     // browser.click('#login-button');
-    //     client.waitForExist('.btn_login',50000);
-    //     browser.click('.btn_login');
-    //     // browser.waitForExist('body *');
-    //     // browser.waitForVisible('body *');
-    //     // browser.click('#logout-button-footer');
-    // });
 
     this.Then(/^I try to connect with username "([^"]*)" and password "([^"]*)"$/, function (user, pass) {
-        client.waitForExist('.btn.btn-danger.btn_login');
-        browser.setValue('input[name=email]', user);
-        browser.setValue('input[name=password]', pass);
-        // browser.click('#login-button');
-        client.waitForExist('.btn_login',50000);
+        client.waitForExist('input[name=email]',50000);
+        browser.setValue('.userfocus', user);
+        client.waitForExist('input[name=password]',50000);
+        browser.setValue('form > div > div:nth-child(2) > input', pass);
         browser.click('.btn_login');
         // browser.waitForExist('body *');
         // browser.waitForVisible('body *');
@@ -91,10 +76,6 @@ module.exports = function () {
         client.waitForExist(classtName,50000);
     });
 
-    // compare url
-    // This.Then(/^I should see url "([^"]*)"$/, function (url) {
-    //     expect(url).toBe(true);
-    // });
 
     /// see text
     this.Then(/^I should see text "([^"]*)"$/, function (text) {
