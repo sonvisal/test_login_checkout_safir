@@ -53,10 +53,10 @@ module.exports = function () {
 
 
     this.Then(/^I try to connect with username "([^"]*)" and password "([^"]*)"$/, function (user, pass) {
-        client.waitForExist('input[name=email]',50000);
-        browser.setValue('.userfocus', user);
-        client.waitForExist('input[name=password]',50000);
-        browser.setValue('form > div > div:nth-child(2) > input', pass);
+        client.waitForExist('#log_uname',50000);
+        browser.setValue('#log_uname', user);
+        client.waitForExist('3log_pass',50000);
+        browser.setValue('#log_pass', pass);
         browser.click('.btn_login');
         // browser.waitForExist('body *');
         // browser.waitForVisible('body *');

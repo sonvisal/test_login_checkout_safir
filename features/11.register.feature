@@ -13,9 +13,9 @@ Feature: Test register page
         Then I should see the field "#last_name"
         Then I should see the field "#pays"
         Then I should see the field "#ville"
-        Then I should see the field "#email"
-        Then I should see the field "#password"
-        Then I should see the button ".btn-register"
+        Then I should see the field "#re_email"
+        Then I should see the field "#re_password"
+        Then I should see the button "#log_uname"
 
     @dev
     Scenario: register success
@@ -25,6 +25,6 @@ Feature: Test register page
         Then I fill the field "#last_name" with value "test"
         Then I fill the field "#pays" with value "cambodia"
         Then I fill the field "#ville" with value "phnom penh"
-        Then I fill the field "#email" with value "dara10@gmail.com"
-        Then I fill the field "#password" with value "dara10@gmail.com"
-        Then I click on the button ".btn-register"
+        Then I fill the field "#re_email" with value "dara10@gmail.com"
+        Then I fill the field "#re_password" with value "dara10@gmail.com"
+        Then I click on the button "#log_uname"
