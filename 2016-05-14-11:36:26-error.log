@@ -1,0 +1,136 @@
+    Then I click on the button "#proccedOrder"                                                              # features/graar/saple_steps.js:66
+    1When I try to connect with usernae "testing@gail.co" and password "Sonvisal114"                 # features/graar/saple_steps.js:61
+      Error: An eleent could not be located on the page using the given search paraeters.
+          - - - - -
+
+    6Then I click on the button ".btn_login"                                                                 # features/graar/saple_steps.js:666
+
+Feature: Test checkout redirected to the bank website page
+--
+--
+  Scenario: Test checkout redirected to the bank websitepage                                                # features/.Checkout.feature:
+    1Then I click on the button "#news > div > div.news-hoe > ul > li:nth-child(1) > div > div.caption > a" # features/graar/saple_steps.js:661
+      Error: eleent (#news > div > div.news-hoe > ul > li:nth-child(1) > div > div.caption > a) still not existing after s
+          - - - - -
+
+    6Then I click on the button ".btn-panel-card"                                                            # features/graar/saple_steps.js:666
+    6Then I click on the button ".dropdown_checkout"                                                         # features/graar/saple_steps.js:666
+    6Then I click on the button "#proccedOrder"                                                              # features/graar/saple_steps.js:666
+--
+--
+    6Then I click on the button ".btn-con-server"                                                            # features/graar/saple_steps.js:666
+    6Then I click on the button "#btnUpdate"                                                                 # features/graar/saple_steps.js:666
+    6Then I should see the title "PayentError.aspx"                                                         # features/graar/saple_steps.js:16
+
+Feature: Test User is logged in page
+
+
+  As a role]
+--
+--
+    When I navigate to "/profile"                                                           # features/graar/saple_steps.js:
+    1Then I click on the button ".btn-profile-black"                                         # features/graar/saple_steps.js:661
+      Error: eleent (.btn-profile-black) still not existing after s
+          - - - - -
+
+    6Then I click on the button "#en"                                                        # features/graar/saple_steps.js:666
+    6Then I click on the button "#updateProfile"                                             # features/graar/saple_steps.js:666
+
+--
+--
+    When I navigate to "/profile"                                                           # features/graar/saple_steps.js:
+    1Then I click on the button ".btn-profile-black"                                         # features/graar/saple_steps.js:661
+      Error: eleent (.btn-profile-black) still not existing after s
+          - - - - -
+
+    6Then I click on the button "#en"                                                        # features/graar/saple_steps.js:666
+    6Then I fill the field "#firstnae" with value "aachange"                              # features/graar/saple_steps.js:716
+    6Then I fill the field "#lastnae" with value "cissejjbrilchange"                        # features/graar/saple_steps.js:716
+--
+--
+    Then I fill the field ".input-search" with value "Aedes de Venustas Eau de" # features/graar/saple_steps.js:71
+    1Then I click on the button ".kesearch"                                      # features/graar/saple_steps.js:661
+      Error: unknown error: Eleent is not clickable at point (8, 11). Other eleent would receive the click: <div class="odal-body">...</div>
+          - - - - -
+
+    6Then I should see class ".hoe-ads-list"                                    # features/graar/saple_steps.js:766
+    6Then I should see class ".caption"                                          # features/graar/saple_steps.js:766
+
+--
+--
+    Then I fill the field ".input-search" with value "Aedes de Venustas Eau de " # features/graar/saple_steps.js:71
+    1Then I click on the button ".kesearch"                                       # features/graar/saple_steps.js:661
+      Error: unknown error: Eleent is not clickable at point (8, 11). Other eleent would receive the click: <div class="odal-body">...</div>
+          - - - - -
+
+    6Then I should see class ".hoe-ads-list"                                     # features/graar/saple_steps.js:766
+    6Then I should see class ".caption"                                           # features/graar/saple_steps.js:766
+
+--
+--
+    When I navigate to "login"                                                              # features/graar/saple_steps.js:
+    1Then I click on the button ".dropdown"                                                  # features/graar/saple_steps.js:661
+      Error: unknown error: Eleent is not clickable at point (14, 1). Other eleent would receive the click: <div class="odal alert in" id="squarespaceModal" role="dialog" aria-labelledby="odalLabel" aria-hidden="true" style="display: block;">...</div>
+          - - - - -
+
+    6When I try to connect with usernae "testing@gail.co" and password "Sonvisal114" # features/graar/saple_steps.js:66
+    Then I should see url "profile"
+    6Then I click on the button ".btn_login"                                                 # features/graar/saple_steps.js:666
+--
+--
+    Then I click on the button "#top-left > ul > li > a"                 # features/graar/saple_steps.js:66
+    1Then I click on the button ".dropdown"                               # features/graar/saple_steps.js:661
+      Error: unknown error: Eleent is not clickable at point (1, 1). Other eleent would receive the click: <div class="odal alert in" id="squarespaceModal" role="dialog" aria-labelledby="odalLabel" aria-hidden="false" style="display: block;">...</div>
+          - - - - -
+
+    6When I try to connect with usernae "aa@gail.co" and password "" # features/graar/saple_steps.js:66
+    6Then I click on the button ".btn_login"                              # features/graar/saple_steps.js:666
+--
+    6When I try to connect with usernae "aa@gail.co" and password "" # features/graar/saple_steps.js:66
+    6Then I click on the button ".btn_login"                              # features/graar/saple_steps.js:666
+    6Then I should see class ".loginError"                                # features/graar/saple_steps.js:766
+
+Feature: Test login by socail page
+
+
+  As a role]
+--
+--
+    When I navigate to "login"                # features/graar/saple_steps.js:
+    1Then I click on the button "#insta-login" # features/graar/saple_steps.js:661
+      Error: eleent not visible
+          - - - - -
+
+
+Feature: Test register page
+
+--
+--
+    Then I should see the field "#eail"         # features/graar/saple_steps.js:41
+    1Then I should see the field "#password"      # features/graar/saple_steps.js:411
+      Error: eleent (#password) still not existing after s
+          - - - - -
+
+    6Then I should see the button ".btn-register" # features/graar/saple_steps.js:76
+
+  6@dev
+--
+--
+    Then I fill the field "#ville" with value "phno penh"          # features/graar/saple_steps.js:71
+    1Then I fill the field "#eail" with value "dara1@gail.co"    # features/graar/saple_steps.js:711
+      RuntieError: invalid eleent state: Eleent is not currently interactable and ay not be anipulated
+          - - - - -
+
+    6Then I fill the field "#password" with value "dara1@gail.co" # features/graar/saple_steps.js:716
+    6Then I click on the button ".btn-register"                      # features/graar/saple_steps.js:666
+
+--
+--
+    Then I fill the field "#ville" with value ""          # features/graar/saple_steps.js:71
+    1Then I fill the field "#eail" with value ""          # features/graar/saple_steps.js:711
+      RuntieError: invalid eleent state: Eleent is not currently interactable and ay not be anipulated
+          - - - - -
+
+    6Then I fill the field "#password" with value ""       # features/graar/saple_steps.js:716
+    6Then I click on the button ".btn-register"            # features/graar/saple_steps.js:666
+    6Then I should see the button ".growl-botto-right"    # features/gr
