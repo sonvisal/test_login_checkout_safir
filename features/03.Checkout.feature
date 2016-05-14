@@ -19,4 +19,5 @@ Feature: Test checkout redirected to the bank website page
     Then I fill the field  "#phone" with value "+88593654734"
     Then I click on the button ".btn_validation"
     Then I click on the button ".btn-con-server"
-    Then I should see the title "confirmorder2"
+    Then I click on the button "#btnUpdate"
+    Then I should see the title "PaymentError.aspx"
