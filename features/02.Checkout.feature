@@ -13,5 +13,5 @@ Feature: Test checkout by remember page
     Then I click on the button ".btn-panel-card"
     Then I click on the button ".dropdown_checkout"
     Then I click on the button "#proccedOrder"
-    When I try to connect with username "mama@gmail.com" and password "root"
+    When I try to connect with username "testing@gmail.com" and password "Sonvisal15031994"
     Then I click on the button ".btn_login"

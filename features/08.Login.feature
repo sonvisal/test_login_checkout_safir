@@ -11,6 +11,6 @@ Feature: Test login any page
     When I navigate to "login"
     #Then I click on the button "#top-left > ul > li > a"
     Then I click on the button ".dropdown"
-    When I try to connect with username "mama@gmail.com" and password "root"
+    When I try to connect with username "testing@gmail.com" and password "Sonvisal15031994"
     Then I should see url "profile"
     Then I click on the button ".btn_login"

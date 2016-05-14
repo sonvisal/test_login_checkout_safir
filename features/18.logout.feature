@@ -8,7 +8,7 @@ Feature: Test logout  page
     Scenario: logout success
         Given I am not connected
         When I navigate to "/login"
-        When I try to connect with username "mama@gmail.com" and password "root"
+        When I try to connect with username "testing@gmail.com" and password "Sonvisal15031994"
         Then I should see class ".dropdown-toggle"
         Then I click on the button  ".dropdown-toggle"
         Then I click on the button "#logout"

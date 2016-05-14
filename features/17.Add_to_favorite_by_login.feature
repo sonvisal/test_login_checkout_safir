@@ -9,7 +9,6 @@ Feature: Test add favorite with login page
   Scenario: Test add favorite with login success
     Given I am not connected
     Then I click on the button ".fa-heart-o"
-    Then I should see text "Login"
-    When I try to connect with username "mama@gmail.com" and password "root"
+    When I try to connect with username "testing@gmail.com" and password "Sonvisal15031994"
     Then I should see url "profile"
     Then I click on the button ".btn_login"

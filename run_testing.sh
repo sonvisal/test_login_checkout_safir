@@ -5,4 +5,6 @@ export  ROOT_URL=http://localhost:3000
 
 chimp --ddp=http://localhost:3000/ --watch >$filename
 #chimp --watch --ddp=$ROOT_URL --path=test_login_checkout_safir
-cat $filename | grep -e "Error|RuntimeError|still not existing after 50000ms|Error: An element could not be located" -A 5 -B 5 > error.log
+echo "last file"
+echo $filename
+cat  $filename | grep -e "Error" -A 5 -B 2 > error.log

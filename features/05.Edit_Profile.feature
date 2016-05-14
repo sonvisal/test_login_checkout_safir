@@ -9,7 +9,7 @@ Feature: Test User is logged change profile page
   Scenario: Test User is logged change profile
     When I navigate to "login"
     #Then I click on the button "#top-left > ul > li > a"
-    When I try to connect with username "mama@gmail.com" and password "root"
+    When I try to connect with username "testing@gmail.com" and password "Sonvisal15031994"
     When I navigate to "/profile"
     Then I click on the button ".btn-profile-black"
     Then I click on the button "#en"
