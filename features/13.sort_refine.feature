@@ -6,7 +6,7 @@ Feature: Test refin sort product page
 
 
     @dev
-    Scenario: efin sort product
+    Scenario: refin sort product
      Then I click on the button "#header > div.header_bottom > div > div > div > div > ul > li:nth-child(4) > a"
      Then I click on the button ".refine_price_range"
      Then I click on the button ".refinePrix"
