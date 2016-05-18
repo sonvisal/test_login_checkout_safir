@@ -33,11 +33,11 @@ module.exports = function () {
     });
 
     this.Then(/^I should see the button "([^"]*)"$/, function (btn) {
-        client.waitForExist(btn);
+        client.waitForExist(btn,50000);
     });
 
     this.Then(/^I should see the field "([^"]*)"$/, function (btn) {
-        client.waitForExist(btn);
+        client.waitForExist(btn,50000);
     });
 
     this.Then(/^I should see the link "([^"]*)"$/, function (btn) {
@@ -48,20 +48,21 @@ module.exports = function () {
         // *= is contains
         // ~= is contains word
         // |= is starts with prefix (i.e., |= "prefix" matches "prefix-...")
-        client.waitForExist('a[href$="'+btn+'"]');
+        client.waitForExist('a[href$="'+btn+'"]',30000);
     });
 
 
-    this.Then(/^I try to connect with username "([^"]*)" and password "([^"]*)"$/, function (user, pass) {
-        client.waitForExist('#log_uname',50000);
+    this.When(/^I try to connect with username "([^"]*)" and password "([^"]*)"$/, function (user, pass) {
+        //client.waitForExist('#log_uname',50000);
         browser.setValue('#log_uname', user);
-        client.waitForExist('3log_pass',50000);
+        //client.waitForExist('#log_pass',50000);
         browser.setValue('#log_pass', pass);
         browser.click('.btn_login');
         // browser.waitForExist('body *');
         // browser.waitForVisible('body *');
         // browser.click('#logout-button-footer');
     });
+
     this.Then(/^I click on the button "([^"]*)"$/, function (btn) {
         client.waitForExist(btn,50000);
         browser.click(btn);
@@ -86,6 +87,27 @@ module.exports = function () {
 
     // this.Then(/^I should see the content shared social media profile "([^"]*)"$/, function (socail) {
     // });
+    // login with facebook
+    this.When(/^I try to connect with facebook account username "([^"]*)" with password "([^"]*)"$/,function(email,password){
+        browser.url("https://www.facebook.com/");
+        browser.setValue('#email', email);
+        browser.setValue('#pass', password);
+        browser.click("#loginbutton");
+    });
+    // login with gmail
+    this.When(/^I try to connect with gmail account username "([^"]*)" with password "([^"]*)"$/,function(email,password){
+        browser.url("https://accounts.google.com");
+        browser.setValue('#Email', email);
+        browser.click("#next");
+        browser.setValue('#Passwd', password);
+        browser.click("#signIn");
+    });
+    // login by twitter
 
-
+    this.When(/^I try to connect with twitter account username "([^"]*)" with password "([^"]*)"$/,function(email,password){
+        browser.url("https://twitter.com/");
+        browser.setValue('#signin-email', email);
+        browser.setValue('#signin-password', password);
+        browser.click(".flex-table-btn");
+    });
 };
