@@ -13,4 +13,4 @@ Feature: Test login wrong password page
     Then I click on the button ".dropdown"
     When I try to connect with username "mama@gmail.com" and password ""
     Then I click on the button ".btn_login"
-    Then I should see class ".loginError"
+    Then I should see class ".bert-container"

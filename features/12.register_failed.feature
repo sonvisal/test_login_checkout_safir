@@ -16,4 +16,4 @@ Feature: Test register failed page
         Then I fill the field "#re_email" with value ""
         Then I fill the field "#re_password" with value ""
         Then I click on the button "#log_uname"
-        Then I should see the button ".growl-bottom-right"
+        Then I should see the button ".bert-container"
