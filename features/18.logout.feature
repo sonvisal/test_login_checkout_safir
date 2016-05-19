@@ -10,6 +10,6 @@ Feature: Test logout  page
         When I navigate to "/login"
         When I try to connect with username "testing@gmail.com" and password "Sonvisal15031994"
         Then I should see class ".dropdown-toggle"
-        Then I click on the button  ".dropdown-toggle"
+        Then I click on the button  ".glyphicon-user"
         Then I click on the button "#logout"
         Then I navigate to "/login"
