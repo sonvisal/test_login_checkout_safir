@@ -8,9 +8,7 @@ Feature: Test login wrong password page
   @dev
   Scenario: Test login wrong password success
     Given I am not connected
-    When I navigate to "/"
-    Then I click on the button "#top-left > ul > li > a"
-    Then I click on the button ".dropdown"
+    When I navigate to "/login"
     When I try to connect with username "mama@gmail.com" and password ""
     Then I click on the button ".btn_login"
     Then I should see class ".bert-container"

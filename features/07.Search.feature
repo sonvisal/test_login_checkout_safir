@@ -7,7 +7,7 @@ Feature: Test Search product by sort page
 
   @dev
   Scenario: Test Search product by sort success
-    Then I fill the field ".input-search" with value "Aedes de Venustas Eau de "
+    Then I fill the field ".input-search" with value "ch"
     Then I click on the button ".kesearch"
     Then I should see class ".home-ads-list"
     Then I should see class ".caption"

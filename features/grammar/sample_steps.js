@@ -51,7 +51,6 @@ module.exports = function () {
         client.waitForExist('a[href$="'+btn+'"]',30000);
     });
 
-
     this.When(/^I try to connect with username "([^"]*)" and password "([^"]*)"$/, function (user, pass) {
         //client.waitForExist('#log_uname',50000);
         browser.setValue('#log_uname', user);

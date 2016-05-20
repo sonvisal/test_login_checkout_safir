@@ -7,8 +7,7 @@ Feature: Test User is logged change profile page
 
   @dev
   Scenario: Test User is logged change profile
-    When I navigate to "login"
-    #Then I click on the button "#top-left > ul > li > a"
+    When I navigate to "/login"
     When I try to connect with username "testing@gmail.com" and password "Sonvisal15031994"
     When I navigate to "/profile"
     Then I click on the button ".btn-profile-black"
